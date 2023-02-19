@@ -1,6 +1,6 @@
 <%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "author" %>
+    <%= form.label "Title" %>
     <%= form.text_field "author" %>
   </p>
   <p>
@@ -10,6 +10,10 @@
   <p>
     <%= form.label "image" %>
     <%= form.text_field "image" %>
+  </p>
+   <p>
+    <%= form.label "place_id" %>
+    <%= form.collection_select "company_id", Company.all, "id", "name" %>
   </p>
   <%= form.submit %>
 <% end %>

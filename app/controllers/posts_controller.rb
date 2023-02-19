@@ -23,3 +23,5 @@ def create
     redirect_to "/companies/#{@post["place_id"]}"
 end
 
+end
+
